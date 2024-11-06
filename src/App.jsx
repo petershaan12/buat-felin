@@ -27,7 +27,7 @@ function Card1({ onClick }) {
           <img src="/1.gif" className="mx-auto h-36" />
           <p>Hallo Sayang 💖</p>
           <div className="btn">
-            <button onClick={onClick}>OK</button>
+            <button onClick={onClick}>Halo Juga</button>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ function Card2({ onClick }) {
           <img src="/2.gif" className="mx-auto h-36" />
           <p>Coba tebak deh siapa yang hari ini ulang taun? cluenya adalah F</p>
           <div className="btn">
-            <button onClick={onClick}>OK</button>
+            <button onClick={onClick}>Aku ?</button>
           </div>
         </div>
       </div>
@@ -69,7 +69,69 @@ function Card3({ onClick }) {
           <img src="/3.gif" className="mx-auto h-36" />
           <p>Yeayyyy betul pacar aku yg paling cantikk sedunia</p>
           <div className="btn">
-            <button onClick={onClick}>OK</button>
+            <button onClick={onClick}>Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Card31({ onClick }) {
+  return (
+    <div className="flex items-center justify-center pu-ctnr pu-ctn">
+      <div className="pu bg-white">
+        <div className="t">
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div className="c">
+          <p>Aku Bersyukur ada kamu dihidup aku </p>
+          <div className="btn">
+            <button onClick={onClick}>Kenapa?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Card32({ onClick }) {
+  return (
+    <div className="flex items-center justify-center pu-ctnr pu-ctn">
+      <div className="pu bg-white">
+        <div className="t">
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div className="c">
+          <img src="/8.gif" className="mx-auto h-36" />
+          <p>Membuatku sadar kalau dunia itu indahh dan bewarna</p>
+          <div className="btn">
+            <button onClick={onClick}>Dasar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Card33({ onClick }) {
+  return (
+    <div className="flex items-center justify-center pu-ctnr pu-ctn">
+      <div className="pu bg-white">
+        <div className="t">
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div className="c">
+          <img src="/9.gif" className="mx-auto h-36" />
+          <p>Intinya adalah</p>
+          <div className="btn">
+            <button onClick={onClick}>next</button>
           </div>
         </div>
       </div>
@@ -90,7 +152,7 @@ function Card4({ onClick }) {
           <img src="/4.gif" className="mx-auto h-36" />
           <p>Selamat Ulang Tahun Pacar Aku yang cantik</p>
           <div className="btn">
-            <button onClick={onClick}>OK</button>
+            <button onClick={onClick}>next</button>
           </div>
         </div>
       </div>
@@ -110,12 +172,12 @@ function Card5({ onClick }) {
         <div className="c">
           <img src="/5.gif" className="mx-auto h-36" />
           <p>
-            Semangat Kuliahnya, Nyanyinya, Himanya dan semuanya banyakkkk...,
-            Pokoknya tetap setia selalu ya dan sayang orang tua dan Tuhan dan
-            aku hihihi
+            Semangat Kuliahnya, Nyanyinya, Himanya dan semuanya banyakkkk..., Ga
+            Boleh sakit kek aku 🥲, Pokoknya tetap setia juga ama Tuhan selalu
+            ya dan sayang orang tua dan aku hihihi
           </p>
           <div className="btn">
-            <button onClick={onClick}>OK</button>
+            <button onClick={onClick}>next</button>
           </div>
         </div>
       </div>
@@ -135,11 +197,11 @@ function Card6({ onClick }) {
         <div className="c">
           <img src="/6.gif" className="mx-auto h-36" />
           <p>
-            Udah deh gitu aja maaf singkat krn yang lainnya dalam doa dan aku
-            mau tidur deh byee
+            Udah deh gitu aja maaf singkat krn semuanya sudah aku doakan hihi
+            dan aku ngantukkk mau tidur deh byee
           </p>
           <div className="btn">
-            <button onClick={onClick}>OK</button>
+            <button onClick={onClick}>Next</button>
           </div>
         </div>
       </div>
@@ -158,7 +220,7 @@ function Card7({ onClick }) {
         </div>
         <div className="c">
           <img src="/us.jpg" className="mx-auto h-36" />
-          <p>💖🥰</p>
+          <p>I Love You 💖🥰</p>
           <div className="btn">
             <button onClick={onClick}>ulang lagi</button>
           </div>
@@ -193,6 +255,9 @@ function App() {
     <Card1 key="card1" onClick={() => handleNextCard()} />,
     <Card2 key="card2" onClick={() => handleNextCard()} />,
     <Card3 key="card3" onClick={() => handleNextCard()} />,
+    <Card31 key="card31" onClick={() => handleNextCard()} />,
+    <Card32 key="card32" onClick={() => handleNextCard()} />,
+    <Card33 key="card33" onClick={() => handleNextCard()} />,
     <Card4 key="card4" onClick={() => handleNextCard()} />,
     <Card5 key="card5" onClick={() => handleNextCard()} />,
     <Card6 key="card6" onClick={() => handleNextCard()} />,
