@@ -1,5 +1,18 @@
 import { useState } from "react";
-import Awal from "./Awal";
+
+function Awal({ onClick }) {
+  return (
+    <>
+      <div className="stp">
+        <p>
+          Anyongg, ada paket buuuu
+          <img src="/sudut.svg" id="" />
+        </p>
+      </div>
+      <img src="/mail.svg" id="ml" onClick={onClick} className="bg-tings" />
+    </>
+  );
+}
 
 function Card1({ onClick }) {
   return (
