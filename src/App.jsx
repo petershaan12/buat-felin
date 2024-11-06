@@ -174,7 +174,7 @@ function App() {
   };
 
   return (
-    <div className="bg-[#ffcdc4] flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen">
       <div className="bg">
         <div className="ly">
           <div className="v">

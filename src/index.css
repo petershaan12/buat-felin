@@ -4,10 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap");
 :root {
-  --bg-color: #fee6da;
-  --bg-x: #ffcdc4;
-  --bg-t: #fcd6b1;
-  --color-primary: #a14204;
+  --bg-color: #fedaf4;
+  --bg-x: #fedaf4;
+  --bg-t: #fedaf4;
+  --color-primary: #a104a1;
   --border-bg: 3px solid rgb(255, 255, 255);
   --border-all: 3.5px solid var(--color-primary);
   --margin-pu: 20px;
@@ -396,7 +396,7 @@
   background: #fcd6b1;
 }
 .pu-ctnr .pu .btn button:last-child {
-  background: #91bbf2;
+  background: #e9b9e5;
 }
 .pu-ctnr .pu .btn button:active {
   transform: scale(0.97);
