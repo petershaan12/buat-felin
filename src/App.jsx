@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Awal({ onClick }) {
   return (
@@ -170,6 +170,23 @@ function Card7({ onClick }) {
 
 function App() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [audioStarted, setAudioStarted] = useState(false);
+  const audioRef = useRef(null);
+  useEffect(() => {
+    const startAudioOnInteraction = () => {
+      if (audioRef.current && !audioStarted) {
+        audioRef.current
+          .play()
+          .catch((error) => console.log("Audio play error:", error));
+        setAudioStarted(true);
+        document.removeEventListener("click", startAudioOnInteraction); // Menghapus event listener setelah audio dimulai
+      }
+    };
+
+    document.addEventListener("click", startAudioOnInteraction);
+
+    return () => document.removeEventListener("click", startAudioOnInteraction);
+  }, [audioStarted]);
 
   const cards = [
     <Awal key="awal" onClick={() => handleNextCard()} />,
@@ -250,6 +267,8 @@ function App() {
           <img src="/love.svg" id="lv" className="bg-tings" />
         </div>
       </div>
+
+      <audio ref={audioRef} src="/song.mp3" preload="auto" loop />
     </div>
   );
 }
